@@ -37,3 +37,15 @@ nb-configuration.xml
 
 # Plugin directory
 /.quarkus/cli/plugins/
+
+# Terraform
+infra/.terraform/
+infra/application_context.tf
+infra/application_variables.tf
+infra/backends.tf
+infra/providers.tf
+infra/service_infra_state.tf
+infra/service_infra_state_config.tf
+infra/team_infra_state.tf
+infra/team_infra_state_config.tf
+infra/versions.tf
