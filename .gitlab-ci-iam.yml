@@ -1,0 +1,5 @@
+include:
+  project: customer/customer-account/customer-account-operations/deployment-role/deployment-role-template
+  ref: main
+  file: .gitlab-ci-iam.yml
+

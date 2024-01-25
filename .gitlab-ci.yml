@@ -1,0 +1,5 @@
+include:
+  -   project: customer/customer-account/customer-account-operations/gitlab-pipelines
+      ref: main
+      file:
+        - V1/pipelines/src_gradle_lambda.yml
