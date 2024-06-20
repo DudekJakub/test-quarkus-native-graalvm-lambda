@@ -20,11 +20,5 @@ module "lambda" {
         security_groups = [local.team_state.vpc_endpoints.sns.security_group_id]
       }
     ]
-    policies = [
-      {
-        name = local.lambda.name
-        json = data.aws_iam_policy_document.lambda_policies.json
-      }
-    ]
   }
 }
