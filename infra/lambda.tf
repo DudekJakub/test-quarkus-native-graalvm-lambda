@@ -4,7 +4,7 @@ module "lambda" {
   context = local.context
 
   vpc_id        = local.team_state.vpc.id
-  kms           = local.service_state.profile.kms.arn
+  kms           = local.team_state.kms.arn
   subnets_ids   = local.team_state.private_subnets.ids
   alarm_sns_arn = local.team_state.sns.alarm_sns_arn
 
