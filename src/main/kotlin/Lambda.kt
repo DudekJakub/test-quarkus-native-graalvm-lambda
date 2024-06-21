@@ -10,7 +10,9 @@ class Lambda : RequestHandler<Any, String> {
         logger.info { "Triggering native serialization" }
         val serializedValue = ObjectMapper().writeValueAsString(listOf(TestData("Data")))
         logger.info { "Processed with serializedValue=$serializedValue" }
-        assert(serializedValue == """[{"data":"Data"}]""")
+        if (serializedValue != """[{"data":"Data"}]""") {
+            throw IllegalArgumentException("Native serialization doesn't work!")
+        }
         return serializedValue
     }
 }
