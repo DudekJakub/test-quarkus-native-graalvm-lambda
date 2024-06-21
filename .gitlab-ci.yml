@@ -3,4 +3,3 @@ include:
       ref: main
       file:
         - V1/pipelines/src_gradle_lambda.yml
-
